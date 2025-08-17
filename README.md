@@ -26,7 +26,7 @@ curso (contiene, case-insensitive)
 anio (ej. 2025)
 
 
-Reglas de negocio
+<h1>Reglas de negocio<h1>
 
 Todos los campos son obligatorios.
 
