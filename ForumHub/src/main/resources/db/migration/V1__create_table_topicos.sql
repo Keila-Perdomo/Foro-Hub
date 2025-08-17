@@ -1,0 +1,12 @@
+-- V1__create_table_topicos.sql
+CREATE TABLE IF NOT EXISTS topicos (
+  id BIGINT NOT NULL AUTO_INCREMENT,
+  titulo VARCHAR(160) NOT NULL,
+  mensaje TEXT NOT NULL,
+  fecha_creacion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  status VARCHAR(20) NOT NULL DEFAULT 'ABIERTO',
+  autor VARCHAR(120) NOT NULL,
+  curso VARCHAR(120) NOT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT uk_titulo_mensaje UNIQUE (titulo, mensaje)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
